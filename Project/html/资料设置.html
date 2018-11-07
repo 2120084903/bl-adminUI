@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>白鹿数据</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="../css/root.css" />
+</head>
+
+<body>
+    <!--模板页获取部分-->
+    <div class="layui-fluid">
+        <div class="mainBox setBox">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-header">设置我的资料
+                            <span class="btColor">（*为必填项）</span>
+                        </div>
+                        <div class="layui-card-body" pad15>
+                            <div class="layui-form" lay-filter="filter">
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">昵称
+                                            <i class="btIcon iconfont icon-bitian"></i>
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="请输入昵称" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">真实姓名
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">性别
+                                            <i class="btIcon iconfont icon-bitian"></i>
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="radio" name="sex" value="男" title="男" checked="">
+                                            <input type="radio" name="sex" value="女" title="女">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">出生日期
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" class="layui-input" id="csnyr" placeholder="yyyy-MM-dd">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">企业名称
+                                            <i class="btIcon iconfont icon-bitian"></i>
+                                        </label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="请输入企业名称" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">职位</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="请输入职位" class="layui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-inline">
+                                        <label class="layui-form-label">头像</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-upload">
+                                                <button type="button" class="layui-btn" id="test1">上传图片</button>
+                                                <div class="layui-upload-list">
+                                                    <img class="layui-upload-img" id="demo1">
+                                                    <p id="demoText"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- 提示 -->
+                                <div class="txtMain">
+                                    <div class="tsTxt">
+                                        <span>请填写关注信息，我们将为你精准推荐政策资讯</span>
+                                        <i class="iconfont icon-guanbi"></i>
+                                    </div>
+                                </div>
+                                <!-- /提示 -->
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">关注的行业
+                                        <i class="btIcon iconfont icon-bitian"></i>
+                                    </label>
+                                    <div class="layui-input-block">
+                                        <div class="HyMain">
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>教育培训</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="网约车" checked="">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="共享单车">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="互联网直播">
+                                                    <input type="checkbox" name="like1[rgzn]" lay-skin="primary" title="人工智能">
+                                                    <input type="checkbox" name="like1[dsj]" lay-skin="primary" title="大数据">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="网约车" checked="">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="共享单车">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="互联网直播">
+                                                    <input type="checkbox" name="like1[rgzn]" lay-skin="primary" title="人工智能">
+                                                    <input type="checkbox" name="like1[dsj]" lay-skin="primary" title="大数据">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>O2O</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="民宿">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="旅游">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="网络订餐">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>物流运输</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="物流业">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="快递业">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>智能科技</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="物联网">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="区块链">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="大数据">
+                                                    <input type="checkbox" name="like1[rgzn]" lay-skin="primary" title="人工智能">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName otherHy">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="其他" lay-filter="otherSle">
+                                                    <p>没找到你想要的行业？点击“其他”自定义吧！</p>
+                                                    <div class="HyChild clearfix">
+                                                        <div class="layui-input-inline">
+                                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="自定义行业1" class="layui-input">
+                                                        </div>
+                                                        <div class="layui-input-inline">
+                                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="自定义行业2" class="layui-input">
+                                                        </div>
+                                                        <div class="layui-input-inline">
+                                                            <input type="text" name="nickname" value="" lay-verify="nickname" autocomplete="off" placeholder="自定义行业3" class="layui-input">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="moreBtn">
+                                            <a href="javascript:;">展示更多
+                                                <i class="iconfont icon-down_arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">关注的部门
+                                        <i class="btIcon iconfont icon-bitian"></i>
+                                    </label>
+                                    <div class="layui-input-block allDep">
+                                        <div class="HyMain">
+                                            <div class="HyList">
+                                                <div class="HyChild noChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="中共中央" checked="">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="全国人大">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="国务院">
+                                                    <input type="checkbox" name="like1[rgzn]" lay-skin="primary" title="全国政协">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>部门</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="中宣部" checked="">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="国家网信办">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="市场监督管理总局">
+                                                    <input type="checkbox" name="like1[rgzn]" lay-skin="primary" title="中国人民银行">
+                                                    <input type="checkbox" name="like1[dsj]" lay-skin="primary" title="银保监会">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="证监会" checked="">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="国家药品监督管理局">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="国家医疗保障局">
+                                                    <input type="checkbox" name="like1[rgzn]" lay-skin="primary" title="国家烟草专卖局">
+                                                    <input type="checkbox" name="like1[dsj]" lay-skin="primary" title="国家中医药管理局">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>群团</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="全国总工会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="全国妇联">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="中国科协">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="全国工商联">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="中国贸促会">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="共青团中央">
+                                                    <input type="checkbox" name="like1[hlwzb]" lay-skin="primary" title="中国残联">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                            <div class="HyList">
+                                                <div class="HyName">
+                                                    <h1>协会</h1>
+                                                </div>
+                                                <div class="HyChild">
+                                                    <input type="checkbox" name="like1[wyc]" lay-skin="primary" title="中国互联网协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国互联网金融协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国连锁经营协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国百货商业协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国电子商务协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国证券业协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国保险行业协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国银行业协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国交通运输协会">
+                                                    <input type="checkbox" name="like1[gxdc]" lay-skin="primary" title="中国快递协会">
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                        <div class="moreBtn">
+                                            <a href="javascript:;">展示更多
+                                                <i class="iconfont icon-down_arrow"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">所在城市</label>
+                                    <div class="layui-input-inline">
+                                        <select name="quiz1">
+                                            <option value="">请选择省</option>
+                                            <option value="浙江" selected="">浙江省</option>
+                                            <option value="你的工号">江西省</option>
+                                            <option value="你最喜欢的老师">福建省</option>
+                                        </select>
+                                    </div>
+                                    <div class="layui-input-inline">
+                                        <select name="quiz2">
+                                            <option value="">请选择市</option>
+                                            <option value="杭州">杭州</option>
+                                            <option value="宁波" disabled="">宁波</option>
+                                            <option value="温州">温州</option>
+                                            <option value="温州">台州</option>
+                                            <option value="温州">绍兴</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <label class="layui-form-label">个人签名</label>
+                                    <div class="layui-input-block">
+                                        <input type="text" name="nickname" lay-verify="nickname" autocomplete="off" placeholder="请输入签名" class="layui-input w60p">
+                                    </div>
+                                </div>
+                                <div class="layui-form-item layui-form-text">
+                                    <label class="layui-form-label">个人简介</label>
+                                    <div class="layui-input-block">
+                                        <textarea name="remarks" placeholder="请输入内容" class="layui-textarea w60p"></textarea>
+                                    </div>
+                                </div>
+                                <div class="layui-form-item">
+                                    <div class="layui-input-block">
+                                        <button class="layui-btn" lay-submit lay-filter="setmyinfo">确认修改</button>
+                                        <button type="reset" class="layui-btn layui-btn-primary">重新填写</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--/模板页获取部分-->
+
+    <!--javaScript-->
+    <script src="../../Frame/jQuery/jquery-1.8.0.min.js"></script>
+    <script src="../../Frame/layui/layui.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script>
+        layui.use(['form', 'layedit', 'laydate', 'upload'], function () {
+            var form = layui.form
+                , layer = layui.layer
+                , layedit = layui.layedit
+                , upload = layui.upload
+                , laydate = layui.laydate;
+
+            //日期
+            laydate.render({
+                elem: '#csnyr'
+            });
+
+            //创建一个编辑器
+            var editIndex = layedit.build('LAY_demo_editor');
+
+            //自定义验证规则
+            form.verify({
+                title: function (value) {
+                    if (value.length < 5) {
+                        return '标题至少得5个字符啊';
+                    }
+                }
+                , pass: [/(.+){6,12}$/, '密码必须6到12位']
+                , content: function (value) {
+                    layedit.sync(editIndex);
+                }
+            });
+
+            //监听指定开关
+            form.on('switch(switchTest)', function (data) {
+                layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+                    offset: '6px'
+                });
+                layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+            });
+
+            //监听提交
+            form.on('submit(demo1)', function (data) {
+                layer.alert(JSON.stringify(data.field), {
+                    title: '最终的提交信息'
+                })
+                return false;
+            });
+
+
+            // 显示自定义行业
+            form.on('checkbox(otherSle)', function (data) {
+                if ($('.otherHy .layui-form-checkbox').hasClass('layui-form-checked')) {
+                    $('.otherHy .HyChild').show();
+                } else {
+                    $('.otherHy .HyChild').hide();
+
+                }
+            });
+
+
+
+        });
+    </script>
+
+    <script>
+        layui.use('upload', function () {
+            var $ = layui.jquery
+                , upload = layui.upload;
+
+            //普通图片上传
+            var uploadInst = upload.render({
+                elem: '#test1'
+                , url: '/upload/'
+                , before: function (obj) {
+                    //预读本地文件示例，不支持ie8
+                    obj.preview(function (index, file, result) {
+                        $('#demo1').attr('src', result); //图片链接（base64）
+                    });
+                }
+                , done: function (res) {
+                    //如果上传失败
+                    if (res.code > 0) {
+                        return layer.msg('上传失败');
+                    }
+                    //上传成功
+                }
+                , error: function () {
+                    //演示失败状态，并实现重传
+                    var demoText = $('#demoText');
+                    demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                    demoText.find('.demo-reload').on('click', function () {
+                        uploadInst.upload();
+                    });
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        // 展示更多
+        $('.setBox .moreBtn').click(function () {
+            $(this).toggleClass('active');
+        });
+
+        $('.setBox .tsTxt i').click(function () {
+            $('.setBox .tsTxt').slideUp(500);
+        });
+
+
+        // 验证码
+        $('.yzCodeBtn').click(function () {
+            $(this).addClass('dontClick').text("重新获取验证码（120秒）");
+            $('.setBox .emailBox').fadeIn();
+        });
+
+    </script>
+
+</body>
+
+</html>

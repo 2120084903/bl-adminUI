@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>白鹿数据</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="../css/root.css" />
+</head>
+<body>
+    <!--模板页获取部分-->
+    <div class="layui-fluid">
+        <div class="trend">
+            <!-- 头部筛选 -->
+           <div class="headerSx">
+               <div class="pageName">趋势分析工具</div>
+            <div class="screenTjBox">
+                <div class="layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-input-inline">
+                            <select name="interest" lay-filter="aihao">
+                                <option value=""></option>
+                                <option value="0">网约车</option>
+                                <option value="1" selected="">互联网直播</option>
+                                <option value="2">共享单车</option>
+                                <option value="3">人工智能</option>
+                                <option value="4">大数据</option>
+                                <option value="5">快递物流</option>
+                                <option value="6">网络借贷</option>
+                                <option value="7">实体零售</option>
+                                <option value="8">旅游</option>
+                                <option value="9">民办教育</option>
+                                <option value="10">区块链</option>
+                                <option value="11">物联网</option>
+                                <option value="12">网络订餐</option>
+                                <option value="13">共享单车</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="HeaderTab">
+                    <ul class="clearfix">
+                        <li class="active">
+                            <a href="javascript:;">最近7天</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">最近15天</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">最近一个月</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-form">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" id="FxDate" value="2018-07-10 - 2018-07-22">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sxBtn">
+                    <button>确定</button>
+                </div>
+            </div>
+           </div>
+            <!-- /头部筛选 -->
+            <!-- 筛选内容 -->
+            <div class="sxContent">
+                <div class="LiContent">
+                    <div class="Liheader">
+                        <div class="HeaderTab">
+                            <ul class="clearfix">
+                                <li class="active">
+                                    <a href="javascript:;">政策趋势</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">风险趋势</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">动态趋势</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="echartsBox">
+                        <div class="ChildContent">
+                            <div id="newPolicy"></div>
+                        </div>
+                        <div class="ChildContent">
+                            <div id="newRisk"></div>
+                        </div>
+                        <div class="ChildContent">
+                            <div id="newDynamic"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /筛选内容 -->
+        </div>
+
+    </div>
+    <!--/模板页获取部分-->
+
+    <!--javaScript-->
+    <script src="../../Frame/jQuery/jquery-1.8.0.min.js"></script>
+    <script src="../../Frame/layui/layui.js"></script>
+    <script src="../js/Modul.js"></script>
+    <!-- 图表 -->
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script> -->
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script> -->
+    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script> -->
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> -->
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script> -->
+    <script>
+        layui.use(['laypage', 'layer', 'laydate'], function () {
+            var laypage = layui.laypage
+                , laydate = layui.laydate
+                , layer = layui.layer;
+            //完整功能
+            laypage.render({
+                elem: 'dzPage'
+                , count: 100
+                , layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+                , jump: function (obj) {
+                    console.log(obj)
+                }
+            });
+
+            //日期范围
+            laydate.render({
+                elem: '#FxDate'
+                , range: true
+            });
+        });
+
+         $('.screenTjBox .HeaderTab li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+        $('.sxContent .HeaderTab li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.echartsBox .ChildContent').eq(index).show().siblings().hide();
+            myChartNewPolicy.resize();
+            myChartNewRisk.resize();
+            myChartNewDynamic.resize();
+        });
+    </script>
+    <!-- 最新政策图表 -->
+    <script type="text/javascript">
+        var dom = document.getElementById("newPolicy");
+        var myChartNewPolicy = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            color: ['#43A0F8'],
+            tooltip: {
+                show: true,
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                left: '1%',
+                right: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            legend: {
+                left: 'center',
+                data: ['政策数量']
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['2018-07-01', '2018-07-02', '2018-07-03', '2018-07-04', '2018-07-05', '2018-07-06', '2018-07-07', '2018-07-08', '2018-07-09', '2018-07-10', '2018-07-11'],
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#999999',
+                        width: '1'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#666'
+                    }
+                }
+            },
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '数量',
+                    max: 200,
+                    min: 0,
+                    boundaryGap: [0.2, 0.2],
+                    splitLine: {
+                        lineStyle: {
+                            // 设置背景辅助线样式
+                            type: 'dashed',
+                            // 使用深浅的间隔色
+                            color: ['#ddd']
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            type: 'solid',
+                            color: '#fff',
+                            width: '1'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: '#666'
+                        }
+                    }
+                }
+            ],
+            dataZoom: [
+                {
+                    startValue: '2018-07-01',
+                    left:'7%',
+                    right:'7%'
+                }, 
+                {
+                    type: 'inside', //鼠标平移
+                    zoomOnMouseWheel:'ctrl' //按住ctrl+鼠标滚轮缩放
+                }],
+            series: [{
+                name: '政策数量',
+                data: [26, 13, 40, 96, 60, 46, 80,20,60,30,68],
+                type: 'line',
+                areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#b8e9fd'
+                    }, {
+                        offset: 1,
+                        color: '#fff'
+                    }])
+                }
+            },
+                smooth: false  //平滑曲线开关
+            }]
+        };
+        ;
+        if (option && typeof option === "object") {
+            myChartNewPolicy.setOption(option, true);
+        }
+        
+    </script>
+     <!-- 最新风险图表 -->
+     <script type="text/javascript">
+        var dom = document.getElementById("newRisk");
+        var myChartNewRisk = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            color: ['#FE7C1D'],
+            tooltip: {
+                show: true,
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                left: '1%',
+                right: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            legend: {
+                left: 'center',
+                data: ['风险数量']
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['2018-07-01', '2018-07-02', '2018-07-03', '2018-07-04', '2018-07-05', '2018-07-06', '2018-07-07'],
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#999999',
+                        width: '1'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#666'
+                    }
+                }
+            },
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '数量',
+                    max: 200,
+                    min: 0,
+                    boundaryGap: [0.2, 0.2],
+                    splitLine: {
+                        lineStyle: {
+                            // 设置背景辅助线样式
+                            type: 'dashed',
+                            // 使用深浅的间隔色
+                            color: ['#ddd']
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            type: 'solid',
+                            color: '#fff',
+                            width: '1'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: '#666'
+                        }
+                    }
+                }
+            ],
+            dataZoom: [{
+                startValue: '2018-07-01',
+                left:'7%',
+                right:'7%'
+            }, {
+                type: 'inside',
+                zoomOnMouseWheel:'ctrl' //按住ctrl+鼠标滚轮缩放
+            }],
+            series: [{
+                name: '风险数量',
+                data: [66, 76, 30, 23, 90, 53, 85],
+                type: 'line',
+                areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#ffdbc0'
+                    }, {
+                        offset: 1,
+                        color: '#fff'
+                    }])
+                }
+            },
+                smooth: false  //平滑曲线开关
+            }]
+        };
+        ;
+        if (option && typeof option === "object") {
+            myChartNewRisk.setOption(option, true);
+        }
+    </script>
+    <!-- 最新动态图表 -->
+    <script type="text/javascript">
+        var dom = document.getElementById("newDynamic");
+        var myChartNewDynamic = echarts.init(dom);
+        var app = {};
+        option = null;
+        option = {
+            color: ['#03BBD3'],
+            tooltip: {
+                show: true,
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'line'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                left: '1%',
+                right: '3%',
+                top: '10%',
+                containLabel: true
+            },
+            legend: {
+                left: 'center',
+                data: ['动态数量']
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['2018-07-01', '2018-07-02', '2018-07-03', '2018-07-04', '2018-07-05', '2018-07-06', '2018-07-07'],
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#999999',
+                        width: '1'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#666'
+                    }
+                }
+            },
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '数量',
+                    max: 200,
+                    min: 0,
+                    boundaryGap: [0.2, 0.2],
+                    splitLine: {
+                        lineStyle: {
+                            // 设置背景辅助线样式
+                            type: 'dashed',
+                            // 使用深浅的间隔色
+                            color: ['#ddd']
+                        }
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            type: 'solid',
+                            color: '#fff',
+                            width: '1'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: '#666'
+                        }
+                    }
+                }
+            ],
+            dataZoom: [{
+                startValue: '2018-07-01',
+                left: '7%',
+                right: '7%'
+            }, {
+                type: 'inside',
+                zoomOnMouseWheel:'ctrl' //按住ctrl+鼠标滚轮缩放
+            }],
+            series: [{
+                name: '动态数量',
+                data: [10, 90, 95, 60, 68, 30, 85],
+                type: 'line',
+                areaStyle: {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#b2f6ff'
+                    }, {
+                        offset: 1,
+                        color: '#fff'
+                    }])
+                }
+            },
+                smooth: false  //平滑曲线开关
+            }]
+        };
+        ;
+        if (option && typeof option === "object") {
+            myChartNewDynamic.setOption(option, true);
+        }
+    </script>
+
+    <!-- 图表自适应 -->
+    <script>
+        window.onresize = function () {
+            myChartNewPolicy.resize();
+            myChartNewRisk.resize();
+            myChartNewDynamic.resize();
+            }
+    </script>
+</body>
+
+</html>

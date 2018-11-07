@@ -1,0 +1,45 @@
+/* 图片背景链接 */
+
+
+/* 信息验证图片 */
+.fi-ico {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../../img/device-icos.jpg) 0 0 no-repeat;
+}
+
+
+
+/*首页政策推荐类型展示图标*/
+.icontype{
+    position: relative;
+    padding-left: 20px;
+}
+.icontype span:hover::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    background: url(../../../Project/img/typehover.png);
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    transition: .4s background ease;
+    -moz-transition: .4s background ease;
+    -webkit-transition: .4s background ease;
+}
+
+.icontype span::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    background: url(../../../Project/img/type.png);
+    left: 0;
+    top: 50%;
+    margin-top: -6px;
+    transition: .4s background ease;
+    -moz-transition: .4s background ease;
+    -webkit-transition: .4s background ease;
+}

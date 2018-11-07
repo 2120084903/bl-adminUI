@@ -1,0 +1,19 @@
+/*=================引入样式=======================*/
+/*框架*/
+@import url('adminUI/layout.css');
+
+@import url('../../Frame/layui/css/layui.css');
+@import url('adminUI/admin.css');
+@import url('adminUI/master.css');
+@import url('adminUI/themes.css');
+@import url('adminUI/search.css');
+@import url('adminUI/global.css');
+@import url('adminUI/url.css');
+
+
+
+
+
+
+/* 阿里妈妈图标库 */
+@import url('http://at.alicdn.com/t/font_630146_623fb82ubof.css');

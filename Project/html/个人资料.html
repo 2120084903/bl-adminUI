@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>白鹿数据</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="../css/root.css" />
+</head>
+
+<body>
+    <!--模板页获取部分-->
+    <div class="layui-fluid">
+
+        <div class="mainBox">
+            <div class="layui-row layui-col-space15">
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-header">我的资料</div>
+                        <div class="layui-card-body" pad15>
+                            <div class="userInfoBox">
+                                <div class="topInfo clearfix">
+                                    <div class="user-card">
+                                        <h2 class="username">
+                                            <span>白鹿数据</span>
+                                            <a lay-href="资料设置.html" lay-text="资料设置" class="iconfont icon-bianji"></a>
+                                        </h2>
+                                        <p class="showTxt"><i class="iconfont icon-zhiwei1"></i><span>马云</span></p>
+                                        <p class="showTxt"><i class="iconfont icon-shengri"></i><span>1990-08-06</span></p>
+                                        <p class="showTxt"><i class="iconfont icon-zhiwei"></i><span>联合创始人</span></p>
+                                        <div class="avatar">
+                                            <img  src="../img/userface.jpg" alt="白鹿数据">
+                                            <i class="iconfont icon-nv nv"></i>
+                                        </div>
+                                    </div>
+                                    <div class="user-actions">
+                                        <ul class="action-list">
+                                                <li>企业名称：<span>阿里巴巴网络技术有限公司</span></li>
+                                            <li>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：<span>1836352132@qq.com</span></li>
+                                            <li>所在城市：<span>四川省成都市高新区</span></li>
+                                            <li>个人签名：<span>我们此后的征途是星辰大海 ^_^</span></li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                                <!--  -->
+                                <div class="bottomInfo">
+                                    <!--  -->
+                                    <div class="followHy">
+                                            <label for="gzhy">个人简介：</label>
+                                            <div class="HyList">
+                                                    <span>我和谁都不争，和谁争我都不屑；我爱大自然，其次就是艺术；我双手烤着生命之火取暖，火萎了，我也准备走了。</span>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    <div class="followHy">
+                                        <label for="gzhy">关注的行业：</label>
+                                        <div class="HyList">
+                                            <ul class="clearfix">
+                                                <li><a href="javascript:;">网约车</a></li>
+                                                <li><a href="javascript:;">互联网直播</a></li>
+                                                <li><a href="javascript:;">共享单车</a></li>
+                                                <li><a href="javascript:;">人工智能</a></li>
+                                                <li><a href="javascript:;">大数据</a></li>
+                                                <li><a href="javascript:;">快递物流</a></li>
+                                                <li><a href="javascript:;">网络借贷</a></li>
+                                                <li><a href="javascript:;">实体零售</a></li>
+                                                <li><a href="javascript:;">旅游</a></li>
+                                                <li><a href="javascript:;">民办教育</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="followHy">
+                                            <label for="gzhy">关注的部门：</label>
+                                            <div class="HyList">
+                                                <ul class="clearfix">
+                                                    <li><a href="javascript:;">中共中央</a></li>
+                                                    <li><a href="javascript:;">国务院</a></li>
+                                                    <li><a href="javascript:;">国家网信办</a></li>
+                                                    <li><a href="javascript:;">交通运输部</a></li>
+                                                    <li><a href="javascript:;">广播电视总局</a></li>
+                                                    <li><a href="javascript:;">文化和旅游部</a></li>
+                                                    <li><a href="javascript:;">人民银行</a></li>
+                                                    <li><a href="javascript:;">银行保险监督管理委员会</a></li>
+                                                    <li><a href="javascript:;">教育部</a></li>
+                                                    <li><a href="javascript:;">财政部</a></li>
+                                                    <li><a href="javascript:;">人力资源和社会保障部</a></li>
+                                                    <li><a href="javascript:;">税务总局</a></li>
+                                                    <li><a href="javascript:;">国家知识产权局</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--/模板页获取部分-->
+
+    <!--自定义弹窗-->
+    <div class="BL-layer">
+        <div class="BL-l-con">
+            <div class="normal-ts">
+                <i class="iconfont icon-gantanhao"></i>
+                <span>该课程为在线课程录播，确定购买？</span>
+            </div>
+        </div>
+    </div>
+
+    <!--javaScript-->
+    <script src="../../Frame/jQuery/jquery-1.8.0.min.js"></script>
+    <script src="../../Frame/layui/layui.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script>
+        layui.use(['form', 'layedit', 'laydate', 'upload'], function () {
+            var form = layui.form
+                , layer = layui.layer
+                , layedit = layui.layedit
+                , upload = layui.upload
+                , laydate = layui.laydate;
+
+            //日期
+            laydate.render({
+                elem: '#date'
+            });
+            laydate.render({
+                elem: '#date1'
+            });
+
+            //创建一个编辑器
+            var editIndex = layedit.build('LAY_demo_editor');
+
+            //自定义验证规则
+            form.verify({
+                title: function (value) {
+                    if (value.length < 5) {
+                        return '标题至少得5个字符啊';
+                    }
+                }
+                , pass: [/(.+){6,12}$/, '密码必须6到12位']
+                , content: function (value) {
+                    layedit.sync(editIndex);
+                }
+            });
+
+            //监听指定开关
+            form.on('switch(switchTest)', function (data) {
+                layer.msg('开关checked：' + (this.checked ? 'true' : 'false'), {
+                    offset: '6px'
+                });
+                layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+            });
+
+            //监听提交
+            form.on('submit(demo1)', function (data) {
+                layer.alert(JSON.stringify(data.field), {
+                    title: '最终的提交信息'
+                })
+                return false;
+            });
+
+
+
+        });
+    </script>
+
+    <script>
+        layui.use('upload', function () {
+            var $ = layui.jquery
+                , upload = layui.upload;
+
+            //普通图片上传
+            var uploadInst = upload.render({
+                elem: '#test1'
+                , url: '/upload/'
+                , before: function (obj) {
+                    //预读本地文件示例，不支持ie8
+                    obj.preview(function (index, file, result) {
+                        $('#demo1').attr('src', result); //图片链接（base64）
+                    });
+                }
+                , done: function (res) {
+                    //如果上传失败
+                    if (res.code > 0) {
+                        return layer.msg('上传失败');
+                    }
+                    //上传成功
+                }
+                , error: function () {
+                    //演示失败状态，并实现重传
+                    var demoText = $('#demoText');
+                    demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                    demoText.find('.demo-reload').on('click', function () {
+                        uploadInst.upload();
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

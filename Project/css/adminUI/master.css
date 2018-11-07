@@ -1,0 +1,1844 @@
+/* 日期选择器重置 */
+
+div.layui-laydate .layui-this {
+    background-color: #1D9ED2 !important;
+}
+
+div.layui-laydate-content td.laydate-selected {
+    background-color: #e4f0ff;
+}
+
+/*谷歌浏览器滚动条*/
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BABBBE;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8C8D8F;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #E8EAED;
+}
+
+.layui-layout-admin .layui-logo .BLlogo {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.layui-layout-admin .layui-logo .BLlogo img {
+    width: 100%;
+    height: 100%;
+    line-height: normal;
+}
+
+/* 白鹿数据--用户管理中心 */
+.dataRow .rowList {
+    float: left;
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    box-sizing: border-box;
+}
+
+.dataRow .rowList:first-child {
+    padding-left: 0;
+}
+
+.dataRow .rowList:last-child {
+    padding-right: 0;
+}
+
+.dataRow .widgetPanel {
+    padding: 10px 30px;
+    border-radius: 6px;
+    position: relative;
+    color: #58666e;
+    border: 1px solid #fff;
+    background-color: #F4F4F5;
+    transition: all 0.15s, 0.15s;
+    -o-transition: all 0.15s, 0.15s;
+    -moz-transition: all 0.15s, 0.15s;
+    -webkit-transition: all 0.15s, 0.15s;
+}
+
+.dataRow .widgetPanel:hover {
+    background-color: #fff;
+    border-color: #1D9ED2;
+}
+
+.dataRow .widgetPanel i {
+    font-size: 42px;
+    padding: 20px 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    line-height: 60px;
+}
+
+.dataRow .widgetPanel h2 {
+    color: #6f787b;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.dataRow .widgetPanel .textMuted {
+    color: #98a6ad;
+    font-size: 14px;
+}
+
+.dataRow .rowList:nth-child(1) .widgetPanel i {
+    color: #1D9ED2;
+}
+
+.dataRow .rowList:nth-child(2) .widgetPanel i {
+    color: #FE7C1D;
+}
+
+.dataRow .rowList:nth-child(3) .widgetPanel i {
+    color: #08cc19;
+}
+
+.formBox {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.formBox .dztable tr th:first-child {
+    min-width: 34px;
+}
+
+.formBox .dztable tr th:last-child {
+    min-width: 74px;
+}
+
+.formBox .layui-tab-content {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.formBox .Welcome img {
+    width: 100%;
+    height: 100%;
+}
+
+.formBox .Welcome {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    background-color: #14A1E0;
+}
+
+.formBox .Welcome .SearchBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -189px;
+    margin-top: -59px;
+}
+
+.formBox .Welcome .SearchBox input {
+    width: 300px;
+    height: 34px;
+    padding: 0 10px;
+    border-radius: 2px 0 0 2px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ededed;
+}
+
+.formBox .Welcome .SearchBox .SearchBoxBtn {
+    height: 36px;
+    border: none;
+    width: 56px;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px;
+    background-color: #47BCEC;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.formBox .Welcome .SearchBox .SearchBoxBtn:hover {
+    background-color: #188fc0;
+}
+
+.formBox .Welcome .SearchBox .SearchBoxBtn i {
+    line-height: 36px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.formBox .Welcome .SearchBox h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.formBox .Welcome .SearchBox p {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 30px;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+.formBox .Welcome .ssBox {
+    box-shadow: 0px 1px 3px #2b93be;
+}
+
+.formBox .Welcome .bgImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -85px;
+    margin-left: -85px;
+    width: 170px;
+    height: 170px;
+}
+
+.formBox .Welcome .bgImg img {
+    width: 100%;
+    opacity: .3;
+}
+
+.layui-upload-img {
+    width: 92px;
+    height: 92px;
+    margin: 0 10px 10px 0;
+    /* border: 1px solid #dadada; */
+}
+
+.layui-input-block .layui-input.w60p,
+.layui-input-block .layui-textarea.w60p {
+    width: 60%;
+}
+
+.mainBox .layui-form-label {
+    margin-right: 20px;
+
+}
+
+.timeBox .layui-form-label {
+    text-align: left;
+    width: auto;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+.ConHaderTab li {
+    font-size: 16px;
+    min-width: auto;
+    padding: 0;
+    margin-right: 25px;
+}
+
+div.layui-tab-brief > .layui-tab-title .layui-this {
+    font-weight: normal;
+}
+
+.mainBox .layui-input-block {
+    margin-left: 130px;
+}
+
+.mainBox .layui-form-item {
+    margin-bottom: 15px;
+}
+
+/* 资料设置 */
+
+.setBox .HyMain .HyName h1 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.setBox .HyMain .HyList {
+    margin-bottom: 15px;
+}
+
+.setBox .HyMain .HyList:last-child {
+    margin-bottom: 0;
+}
+
+.setBox .layui-form-checkbox {
+    width: 136px;
+}
+
+.setBox .HyCloub .layui-form-checkbox {
+    width: 190px;
+}
+
+.setBox .HyMain .HyList .otherHy .layui-form-checkbox span {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.setBox .allDep .layui-form-checkbox {
+    width: 190px;
+}
+
+.setBox .allDep .layui-form-checkbox[lay-skin=primary] span {
+    max-width: 160px;
+}
+
+.setBox .HyMain .HyList .noChild .layui-form-checkbox {
+    margin-top: 0;
+}
+
+.setBox .HyMain .HyList .otherHy {
+    position: relative;
+}
+
+.setBox .HyMain .HyList .otherHy p {
+    font-size: 12px;
+    position: absolute;
+    color: #FE7C1D;
+    left: 70px;
+    top: 6px;
+}
+
+.setBox .HyMain .HyList .otherHy .HyChild {
+    margin-top: 10px;
+    display: none;
+}
+
+.setBox .layui-form-checkbox[lay-skin=primary] span {
+    float: left;
+    padding-left: 26px;
+    max-width: 120px;
+}
+
+.setBox .HyCloub .layui-form-checkbox[lay-skin=primary] span {
+    max-width: 160px;
+}
+
+.setBox .layui-form-checkbox i {
+    position: absolute;
+    left: 0;
+}
+
+.setBox .HyMain .HyList:first-child {
+    padding-top: 9px;
+}
+
+.setBox .moreBtn a {
+    color: #1D9ED2;
+}
+
+.setBox .moreBtn {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.setBox .txtMain {
+    text-align: left;
+    margin-left: 23px;
+}
+
+.setBox .tsTxt {
+    display: inline-block;
+    margin: 20px 0;
+    color: #FE7C1D;
+    position: relative;
+    padding: 4px 40px 4px 20px;
+    border: 1px solid #ffe8d6;
+    background-color: #fffaf6;
+}
+
+.setBox .tsTxt i {
+    position: absolute;
+    right: 8px;
+    color: #e8ded7;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -12px;
+    font-size: 16px;
+}
+
+.setBox .tsTxt i:hover {
+    color: #d48147;
+}
+
+.setBox .moreBtn a i {
+    display: inline-block;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.setBox .moreBtn.active a i {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.setBox .yzCodeBtn {
+    background-color: #06a953;
+}
+
+.setBox .yzCodeBtn.dontClick {
+    color: #787878;
+    background-color: #e9e9e9;
+}
+
+.setBox .SendOut {
+    color: #06a953;
+    cursor: default;
+    padding-left: 0;
+    background-color: #fff;
+}
+
+.setBox .SendOut.errorTs {
+    color: #FE7C1D;
+}
+
+.setBox .emailBox {
+    display: none;
+}
+
+/* 个人资料展示 */
+
+.userInfoBox .topInfo {
+    padding: 20px 0 50px 0;
+    margin: 0 30px;
+    border-bottom: 1px solid #ededed;
+}
+
+.userInfoBox .user-card {
+    position: relative;
+    float: left;
+    width: calc(50% - 180px);
+    padding-left: 180px;
+    padding-top: 20px;
+}
+
+.userInfoBox .user-card .username {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(97, 97, 97);
+    margin: 0px;
+}
+
+.userInfoBox .user-card .username a {
+    color: #999;
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.userInfoBox .user-card .username a:hover {
+    color: #1D9ED2;
+}
+
+.userInfoBox .user-card .tip {
+    color: rgb(176, 176, 176);
+    margin: 0px 0px 6px;
+}
+
+.userInfoBox .user-card .showTxt {
+    color: rgb(60, 60, 60);
+    margin: 3px 0;
+}
+
+.userInfoBox .user-card .showTxt i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    width: 22px;
+    margin-right: 6px;
+    color: #1D9ED2;
+}
+
+.userInfoBox .user-card .link {
+    font-size: 15px;
+    color: #FE7C1D;
+}
+
+.userInfoBox .user-card .avatar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.userInfoBox .user-card .avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    padding: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    border-image: initial;
+    border-radius: 150px;
+}
+
+.userInfoBox .user-card .avatar i {
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.userInfoBox .user-card .avatar i.nan {
+    background-color: #1D9ED2;
+}
+
+.userInfoBox .user-card .avatar i.nv {
+    background-color: #fe1d9c;
+}
+
+.userInfoBox .user-actions {
+    float: right;
+    width: 50%;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.userInfoBox .user-actions .action-list {
+    list-style-type: none;
+    color: #333;
+    margin: 0px;
+    padding: 0px;
+}
+
+.userInfoBox .user-actions .action-list li {
+    position: relative;
+    padding: 6px 0px;
+}
+
+.userInfoBox .bottomInfo .followHy label {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    font-size: 14px;
+    color: #333;
+    text-align: right;
+}
+
+.userInfoBox .bottomInfo .followHy {
+    margin-bottom: 20px;
+}
+
+.userInfoBox .bottomInfo .followHy:last-child {
+    margin-bottom: 0;
+}
+
+.userInfoBox .bottomInfo .followHy .HyList {
+    display: inline-block;
+    width: 90%;
+}
+
+.userInfoBox .bottomInfo .followHy .HyList ul li {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.userInfoBox .bottomInfo .followHy .HyList ul li a {
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 2px 16px;
+    border-radius: 2px;
+    display: block;
+    color: #333;
+    border: 1px solid #f1f1f1;
+}
+
+.userInfoBox .bottomInfo .followHy .HyList ul li a:hover {
+    border-color: #1D9ED2;
+}
+
+.userInfoBox .bottomInfo {
+    padding: 40px 30px;
+}
+
+.mainBox .layui-form-label {
+    position: relative;
+}
+
+.setBox .btIcon {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    color: red !important;
+}
+
+.btColor {
+    color: red !important;
+}
+
+/*  */
+
+/* 首页修改 */
+
+.indexMain .userInfo .userImg {
+    text-align: center;
+    position: relative;
+}
+
+.indexMain .userInfo .userImg img {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #eee;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.indexMain .userInfo .userImg i {
+    position: absolute;
+    bottom: 0;
+    left: 51%;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.indexMain .userInfo .userImg i.nv {
+    background-color: #fe1d9c;
+}
+
+.indexMain .userInfo .userImg i.nan {
+    background-color: #1D9ED2;
+}
+
+.indexMain .userInfo .nameBox {
+    text-align: center;
+}
+
+.indexMain .userInfo .userData {
+    margin-top: 10px;
+}
+
+.indexMain .userInfo .userData .Nickname {
+    color: #333;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.indexMain .userInfo .userData .Nickname a {
+    color: #999;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.indexMain .userInfo .userData .Nickname a:hover {
+    color: #1D9ED2;
+}
+
+.indexMain .userInfo .userData .userName {
+    font-size: 14px;
+    color: #999;
+}
+
+.indexMain .userInfo .userData .infoList .listChild {
+    margin: 3px 0;
+    text-align: center;
+}
+
+.indexMain .userInfo .userData .infoList .listChild .nobd {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    color: #FE7C1D;
+    font-size: 12px;
+    padding: 0 4px;
+    border-radius: 3px;
+    background-color: #fff0e5;
+}
+
+.indexMain .userInfo .userMs {
+    margin: 15px 0 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #f6f6f6;
+}
+
+.indexMain .userInfo .userMs h1 {
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.indexMain .userInfo .userMs p {
+    font-size: 14px;
+    color: #666;
+}
+
+.indexMain .userInfo .userMs .MsList {
+    margin-bottom: 15px;
+}
+
+.indexMain .newList {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ededed;
+}
+
+.indexMain .newList:last-child {
+    border-bottom: 0;
+}
+
+.indexMain .newList a {
+    display: block;
+}
+
+.indexMain .newList a:hover .newsBt p {
+    color: #1D9ED2;
+}
+
+.indexMain .newList a h3 i {
+    font-style: normal;
+    float: left;
+    width: 60px;
+    height: 20px;
+    font-size: 13px;
+    color: #f68c22;
+    text-align: center;
+    background: rgba(246, 140, 34, .1);
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.indexMain .newList a h3 p {
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: calc(100% - 60px - 10px);
+}
+
+.indexMain .newList ul li.newsSx {
+    margin-top: 8px;
+}
+
+.indexMain .newList ul li.newsSx div {
+    display: inline-block;
+    margin-right: 60px;
+    color: #999;
+    font-size: 12px;
+}
+
+.indexMain .newList ul li.newsSx div:last-child {
+    margin-right: 0;
+}
+
+.rowBox .colList {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 2px 16px;
+    border-radius: 2px;
+    display: block;
+    color: #333;
+    border: 1px solid #f1f1f1;
+}
+
+.rowBox .colList:hover {
+    border-color: #1D9ED2;
+}
+
+.indexMain .layui-this .feedbackBtn {
+    color: #fff;
+    font-size: 14px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    background-color: #1D9ED2;
+}
+
+.indexMain .layui-this .feedbackBtn:hover {
+    background-color: #1493c6;
+}
+
+.indexMain .fkImgBox img {
+    width: 100%;
+}
+
+.indexMain .fkIcon {
+    display: block;
+    padding-left: 6px;
+}
+
+.indexMain .fkIcon i {
+    font-size: 24px;
+    color: #a7a7a7;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.indexMain .fkIcon:hover i {
+    margin-right: -3px;
+    color: #1D9ED2;
+}
+
+.indexMain .dataRow .rowList {
+    flex: 1;
+}
+
+.indexMain .tabSpan ul li {
+    float: left;
+    padding: 10px 0;
+    margin-right: 10px;
+}
+
+.indexMain .tabSpan ul li.active a {
+    color: #1D9ED2;
+    font-weight: bold;
+}
+
+.indexMain .tabSpan ul li:last-child {
+    margin-right: 0;
+}
+
+.indexMain .tabSpan ul li:last-child a {
+    border-right: 0;
+}
+
+.indexMain .tabSpan ul li a {
+    color: #333;
+    display: block;
+    padding-right: 10px;
+    border-right: 1px solid #ededed;
+    line-height: 22px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.indexMain .tabSpan ul li a:hover {
+    color: #1D9ED2;
+}
+
+.indexMain .bodyBox {
+    min-height: 390px;
+}
+
+.indexMain .newList:last-child {
+    border-bottom: none;
+}
+
+/* 意见反馈 */
+
+.feedbackMian .formMain h1 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.feedbackMian .formMain .fkBox {
+    text-align: center;
+}
+
+.feedbackMian .formMain .fkBox .textBox {
+    width: 50%;
+    display: inline-block;
+}
+
+.feedbackMian .formMain .fkBox .textBox textarea {
+    min-height: 300px;
+    max-height: 500px;
+    background-color: #f9f9f9;
+}
+
+.feedbackMian .formMain .fkBox .layui-form-item {
+    margin: 20px 0;
+}
+
+/* 信息验证 */
+
+.infoCodeBox {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.infoCodeBox .yzBox {
+    padding: 0 20px;
+}
+
+.device-detail-area {
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.device-detail-area li {
+    padding: 30px 0;
+    position: relative;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: -1px;
+}
+
+.device-detail-area li:last-child {
+    border-bottom: none;
+}
+
+.font-img-item {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 0 56px;
+}
+
+.device-detail-area .font-img-item {
+    margin-left: -10px;
+}
+
+.fi-ico-lock {
+    background-position: 0px 0;
+}
+
+.font-img-item .fi-ico {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.title-normal {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.font-default {
+    color: #9d9d9d;
+    line-height: 1.5;
+    white-space: nowrap;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 680px;
+}
+
+.device-detail-area .ada-btn-area {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+}
+
+.n-btn {
+    display: inline-block;
+    line-height: normal !important;
+    color: #555;
+    border: 1px solid #e8e8e8;
+    padding: 7px 0;
+    width: 120px;
+    text-align: center;
+    background: #fff;
+    overflow: visible;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fi-ico-email {
+    background-position: -40px 0;
+}
+
+.fi-ico-phone {
+    background-position: -200px 0;
+}
+
+.n-btn:hover {
+    background: #f3f3f4;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.bsTxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    color: #FE7C1D;
+    font-size: 13px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background-color: #fff0e5;
+}
+
+.bsTxt.complete {
+    color: #00A854;
+    background-color: #d0ffe8;
+}
+
+.register {
+    color: #555;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.register:hover {
+    background-color: #fff;
+}
+
+.emailYz {
+    padding: 20px 20px 0 20px;
+}
+
+.emailYz .showEmail {
+    line-height: 36px;
+    color: #ff7676;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.PopupBox {
+    display: none;
+}
+
+.emailYz .obtainBtn {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.emailYz .layui-input {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.emailYz .obtainBtn.ts {
+    display: none;
+    width: auto;
+    color: #00A854;
+    cursor: default;
+    padding-left: 0;
+    background-color: #fff;
+}
+
+.emailYz .obtainBtn.ts i {
+    margin-right: 6px;
+}
+
+.emailYz .obtainBtn.ts:hover {
+    opacity: 1;
+}
+
+.emailYz .dontClick {
+    cursor: default;
+    color: #787878;
+    background-color: #e9e9e9;
+}
+
+.emailYz .layui-btn:hover {
+    opacity: 1;
+}
+
+.emailYz .tsShow {
+    color: #FE7C1D;
+    font-size: 13px;
+    padding: 6px 20px;
+    border: 1px solid #eee;
+    background-color: #fff3eb;
+    margin-bottom: 10px;
+}
+
+/* 行业报告 */
+
+.reportMain .reportList {
+    position: relative;
+    padding: 25px;
+    width: calc(25% - 16px);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px dashed #ededed;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.reportMain .reportList:nth-child(4n) {
+    margin-right: 0;
+}
+
+.reportMain .reportList:hover {
+    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .3);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.reportMain .reportList b {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.reportMain .reportList b a {
+    width: 102px;
+    height: 128px;
+    border: 1px solid #eee;
+    display: inline-block;
+}
+
+.reportMain .reportList b a img {
+    width: 100%;
+    height: 100%;
+}
+
+.reportMain .operate-book {
+    display: block;
+    float: left;
+    width: 80%;
+    padding-left: 8px;
+}
+
+.reportMain .operate-book em {
+    font-style: normal;
+    line-height: 22px;
+    height: 46px;
+    display: block;
+}
+
+.reportMain .operate-book em a {
+    font-size: 15px;
+    color: #333;
+    position: relative;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportMain .operate-book em a::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #cecece;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportMain .reportList:hover em a::before {
+    background-color: #FE7C1D;
+}
+
+.reportMain .operate-book em a:hover {
+    color: #1D9ED2;
+}
+
+.reportMain .operate-book p {
+    color: #FE7C1D;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 24px;
+}
+
+.reportMain a.button {
+    position: absolute;
+    top: 74px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 24px;
+    border-radius: 16px;
+    margin-top: 24px;
+    display: block;
+    float: left;
+    background: #1D9ED2;
+    font-size: 12px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.reportMain a.button:hover {
+    background: #188fc0;
+}
+
+.typeListBox .hot-label {
+    padding: 20px 0 20px 30px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+}
+
+.hot-label li,
+.hot-label span {
+    display: inline-block;
+    float: left;
+}
+
+.typeListBox .hot-label span {
+    color: #333;
+    width: 60px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 4px;
+    padding: 10px 0 4px 0;
+}
+
+.typeListBox .hot-label ul {
+    float: left;
+    width: calc(100% - 86px);
+    border-right: 0;
+}
+
+.typeListBox .hot-label li {
+    font-size: 12px;
+    margin: 3px 5px;
+}
+
+.hot-label li a {
+    color: #333;
+    font-size: 14px;
+    padding: 6px 16px;
+    display: block;
+    position: relative;
+    background: #fff;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.hot-label li.active a,
+.hot-label li:hover a {
+    background: #1D9ED2;
+    color: #fff;
+}
+
+/* 最新 */
+
+.Newest .tableTab {
+    margin-top: 20px;
+}
+
+.Newest .newBodyTable {
+    margin-top: 35px;
+}
+
+.Newest .newBodyTable td a {
+    color: #333;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.Newest .newBodyTable td a:hover {
+    color: #1D9ED2;
+}
+
+.Newest .newBodyTable .TableMainBox {
+    display: none;
+}
+
+.Newest .newBodyTable .TableMainBox:first-child {
+    display: block;
+}
+
+/* 趋势分析工具 */
+
+.headerSx {
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+.headerSx .pageName {
+    font-size: 18px;
+    color: #555;
+}
+
+.headerSx .layui-form-item .layui-input-inline {
+    margin-right: 5px;
+}
+
+.headerSx .screenTjBox {
+    margin-top: 20px;
+}
+
+.headerSx .HeaderTab {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerSx .screenTjBox .layui-form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerSx .screenTjBox .layui-form .layui-form-item {
+    margin-bottom: 0;
+}
+
+.headerSx .screenTjBox .layui-form .layui-input {
+    height: 34px;
+    border-radius: 0;
+    border-color: #d9d9d9;
+}
+
+.headerSx .screenTjBox .layui-inline {
+    margin-bottom: 0;
+}
+
+.headerSx .sxBtn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerSx .sxBtn button {
+    height: 34px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: #1D9ED2;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.headerSx .sxBtn button:hover {
+    background-color: #188fc0;
+}
+
+.sxContent .LiContent {
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+    padding: 20px 25px;
+    background-color: #fff;
+}
+
+.sxContent .LiContent .Liheader .left-wrapper {
+    font-size: 18px;
+    color: #555;
+}
+
+.sxContent .LiContent .ChildContent {
+    margin-top: 20px;
+    display: none;
+}
+
+.sxContent .LiContent .ChildContent:first-child {
+    display: block;
+}
+
+#newPolicy {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#newRisk {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#newDynamic {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+/*百科*/
+.baike {
+    width: 50%;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.baike .BookFace {
+    float: left;
+    margin-right: 20px;
+}
+
+.baike .BookFace img {
+    /*width: 100%;*/
+    height: 125px;
+    border: 1px solid #ededed;
+}
+
+.baike .BookInfo {
+    float: left;
+    width: 70%;
+}
+
+@media only screen and (max-width: 900px) {
+    div.baike {
+        width: 90%;
+    }
+}
+
+.baike .bkBt h3 {
+    font-size: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-weight: 400;
+    -webkit-box-orient: vertical;
+}
+
+.baike .bkBt h3 a {
+    color: #333;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.baike .bkBt h3 a:hover {
+    color: #1D9ED2;
+}
+
+.baike .bkJs {
+    color: #666;
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    height: 40px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.baike .bkJs a:hover {
+    color: #1D9ED2;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.baike .infoBtn {
+    margin-top: 12px;
+}
+
+.baike .infoBtn a {
+    display: inline-block;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    background: #1D9ED2;
+    color: #fff;
+    text-align: center;
+    border-radius: 90px;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.baike .infoBtn a:hover {
+    background-color: #188fc0;
+}
+
+/*================================订单详情=================================*/
+.order-details {
+    font-family: "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+}
+
+.order-details .o-box {
+    padding: 0 40px;
+    background-color: #fff;
+}
+
+.order-details .o-header {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.order-details .o-header h1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 44px;
+    color: #1D9ED2;
+}
+
+.order-details .o-header small {
+    color: #616161;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 2;
+}
+
+.o-box .o-info {
+    margin-bottom: 30px;
+    padding: 6px 0 12px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.o-box .o-info:last-child {
+    border-bottom: none;
+}
+
+.o-box .o-info .title {
+    padding-left: 20px;
+    position: relative;
+}
+
+.o-box .o-info .title:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 18px;
+    margin-top: -9px;
+    border-radius: 4px;
+    background-color: #28B18A;
+}
+
+.o-box .o-info .title h2 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #444;
+    font-size: 18px;
+}
+
+.o-box .o-info .o-details-info {
+    padding: 20px 0;
+    position: relative;
+}
+
+.o-box .o-info .o-details-info .o-num {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.o-box .o-info-list .list-title {
+    float: left;
+    min-width: 80px;
+    color: #666;
+    font-size: 15px;
+    max-width: 110px;
+}
+
+.o-box .o-info-list .list-con {
+    float: left;
+    color: #666;
+    font-size: 15px;
+}
+
+.o-box .o-info-list .list-con .o-pay-type {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.o-box .o-info-list .list-con .o-pay-type.wechat-pay {
+    color: #00C800;
+}
+
+.o-box .o-info-list {
+    padding: 5px 0;
+}
+
+.o-box .o-info .layui-table tbody tr:hover {
+    background-color: inherit;
+}
+
+.o-box .o-info .layui-table tbody tr a {
+    color: #666;
+}
+
+.o-box .o-info .layui-table tbody tr a:hover {
+    color: #1D9ED2;
+}
+
+.o-box .price-show {
+    position: absolute;
+    right: 0;
+    top: 34px;
+}
+
+.money {
+    color: #ff6700;
+    font-size: 14px;
+}
+
+.money em {
+    font-style: normal;
+    font-size: 40px;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*================================开发票=================================*/
+
+/*.invoice-box .layui-table[lay-even] tr:nth-child(even){*/
+/*background-color: #edf2f4;*/
+/*}*/
+.table-bottom-box {
+    margin-top: 20px;
+}
+
+.table-bottom-box .page-tool {
+    float: left;
+}
+
+.table-bottom-box .show-total-price {
+    float: right;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.table-bottom-box .show-total-price .money em {
+    font-size: 30px;
+    font-family: inherit;
+}
+
+.invoice-box .table-hiden {
+    max-height: 357px;
+    overflow: auto;
+}
+
+.invoice-box .cy-user {
+    /*margin: 10px 0;*/
+}
+
+.invoice-box .cy-user ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.invoice-box .cy-user ul li a {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    padding: 6px 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.invoice-box .cy-user ul li a i {
+    position: absolute;
+    right: 0;
+    color: #28B18A;
+    bottom: -3px;
+    font-size: 20px;
+    display: none;
+}
+
+.invoice-box .cy-user ul li.active a {
+    color: #28B18A;
+    border-color: #28B18A;
+}
+
+.invoice-box .cy-user ul li.active a i {
+    display: block;
+}
+
+.invoice-box .layui-input-block.ml20 {
+    margin-left: 20px;
+}
+
+.invoice-box .advice-box {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 10;
+    width: 250px;
+    border: 1px solid #E0E0E0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.invoice-box .advice-box .advice-title {
+    background: #f4f4f4;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+}
+
+.invoice-box .advice-box .advice-list {
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 10px;
+    border-bottom: 1px dashed #e0e0e0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.invoice-box .advice-box .advice-list:last-child {
+    border-bottom: 0;
+}
+
+.invoice-box .advice-box .advice-list:hover {
+    color: #28B18A;
+}
+
+.invoice-box .fp-tt {
+    width: 250px;
+}
+.invoice-box .layui-form-label i{
+    position: absolute;
+    right: -4px;
+    top: 0;
+    color: #FE7C1D;
+    font-size: 16px;
+    line-height: 38px;
+    cursor: pointer;
+}
+/*================================信息详情=================================*/
+.info-details .layout-title {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #555;
+    padding-left: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.info-details .order-layout {
+    margin-bottom: 30px;
+}
+
+.info-details .order-layout:last-child {
+    margin-bottom: 0;
+}
+
+.info-details .layout-title:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 18px;
+    margin-top: -9px;
+    border-radius: 4px;
+    background-color: #28B18A;
+}
+
+.info-details .order-con {
+    margin-top: 15px;
+}
+
+.info-details .order-con .list-info {
+    color: #333;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.info-details .order-con .list-info .label-txt {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 75px;
+    margin-right: 5px;
+}
+
+/*================================操作成功=================================*/
+.cz-mian .cz-box {
+    padding: 200px 0;
+}
+
+.cz-mian .cz-header {
+    text-align: center;
+}
+
+.cz-mian .cz-header .cz-icon i {
+    color: #555;
+    font-size: 60px;
+}
+
+.cz-mian .cz-header .cz-state {
+    color: #555;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.cz-mian .cz-sm {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cz-mian .cz-sm a {
+    color: #1D9ED2;
+}

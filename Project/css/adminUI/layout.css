@@ -1,0 +1,321 @@
+/* 用于样式层叠---重置皮肤 */
+
+.layui-layout-admin .layadmin-setTheme-side,
+.layui-layout-admin .layui-side-menu {
+    background-color: #fff;
+    color: #363f44;
+}
+
+.layui-layout-admin .layui-nav .layui-nav-item a {
+    color: #333;
+}
+
+.layui-layout-admin .layui-nav .layui-nav-item a:hover {
+    color: #333;
+}
+
+.layui-layout-admin .layui-nav-itemed > a,
+.layui-nav-tree .layui-nav-title a,
+.layui-nav-tree .layui-nav-title a:hover {
+    color: #333 !important;
+}
+
+.layui-layout-admin .layui-nav .layui-nav-mored,
+.layui-layout-admin .layui-nav-itemed > a .layui-nav-more {
+    border-color: transparent transparent #1D9ED2;
+}
+
+.layui-layout-admin .layui-nav .layui-nav-more {
+    border-color: #9bcaff transparent transparent;
+}
+
+.layui-layout-admin .layui-nav-itemed > .layui-nav-child {
+    background-color: #fff !important;
+}
+
+.layui-layout-admin .layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-layout-admin .layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-layout-admin .layui-nav-tree .layui-this,
+.layui-layout-admin .layui-nav-tree .layui-this > a,
+.layui-layout-admin .layui-nav-tree .layui-this > a:hover {
+    background-color: #e9f5fe;
+    color: #1D9ED2;
+}
+
+.layui-layout-admin .layadmin-side-shrink .layui-side-menu .layui-nav > .layui-nav-itemed > a {
+    background-color: #fff;
+}
+
+.layui-layout-admin .layui-side-menu .layui-nav .layui-nav-item a:hover {
+    background: #e9f5fe;
+    color: #1D9ED2;
+}
+
+.layui-layout-admin .layui-nav-tree .layui-nav-bar {
+    background-color: #1D9ED2;
+}
+
+div.layadmin-side-shrink .layui-side-menu .layui-nav > .layui-nav-itemed > a {
+    background-color: #fff;
+}
+
+div.layui-layout-admin .layui-logo,
+div.layui-layout-admin .layui-logo a {
+    color: #fff;
+    font-weight: normal;
+}
+
+div.layui-layout-admin .layui-logo {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #1D9ED2;
+}
+
+div.layui-layout-admin .layui-header .layui-nav .layui-this:after,
+div.layui-layout-admin .layui-header .layui-nav-bar {
+    background-color: #1D9ED2;
+}
+
+div.layui-side-menu .layui-nav .layui-nav-itemed > .layui-nav-child {
+    padding: 0;
+}
+
+/* tab重置 */
+
+div.layui-tab-brief > .layui-tab-title .layui-this {
+    font-weight: bolder;
+    color: #1D9ED2;
+}
+
+div.layui-tab-brief > .layui-tab-more li.layui-this:after,
+div.layui-tab-brief > .layui-tab-title .layui-this:after {
+    border-bottom: 2px solid #1D9ED2;
+}
+
+/* 分页 */
+
+div.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #1D9ED2;
+}
+
+div.layui-laypage a:hover {
+    color: #1D9ED2;
+}
+
+div.layui-laypage input:focus,
+div.layui-laypage select:focus {
+    border-color: #1D9ED2 !important;
+}
+
+/* 内容盒子 */
+.contentBox {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+}
+
+/*loading*/
+
+.loadingBox {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 50%;
+    margin-top: -32px;
+    text-align: center;
+}
+
+.loadingBox svg {
+    width: 60px;
+    height: 60px;
+}
+
+.loadingBox .loadingTxt {
+    color: #666;
+}
+
+/* tab */
+.HeaderTab ul li {
+    float: left;
+    margin: 0;
+    height: 32px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, .65);
+    transition: all .3s ease;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-top-width: 1.02px;
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+}
+
+.HeaderTab ul li a {
+    color: #666;
+    transition: all .3s ease;
+}
+
+.HeaderTab ul li:first-child {
+    border-radius: 0;
+    border-left: 1px solid #d9d9d9;
+}
+
+.HeaderTab ul li:last-child {
+    border-radius: 0;
+}
+
+.HeaderTab ul li.active {
+    background: #fff;
+    border-color: #1D9ED2;
+    color: #1D9ED2;
+    box-shadow: -1px 0 0 0 #1D9ED2;
+    z-index: 1;
+}
+
+.HeaderTab ul li.active a {
+    color: #1D9ED2;
+}
+
+.HeaderTab ul li.active:first-child {
+    border-color: #1D9ED2;
+    box-shadow: none !important;
+}
+
+/* 头部搜素 */
+
+.layui-layout-admin div.headerSearchBox {
+    left: 25%;
+    top: 50%;
+    margin-top: -22px;
+}
+
+.layadmin-side-shrink .layui-layout-admin div.headerSearchBox {
+    left: 15%;
+}
+
+.headerSearchBox input {
+    border: none;
+    width: 250px;
+    caret-color: #1D9ED2;
+    font-size: 13px;
+    color: #666;
+    line-height: 36px;
+    padding-right: 30px;
+    border-bottom: 1px solid #ddd;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+
+.headerSearchBox input:focus {
+    border-color: #1D9ED2;
+}
+
+.headerSearchBox .SearchBoxBtn i {
+    font-size: 20px;
+    color: #a7a7a7;
+}
+
+.headerSearchBox .SearchBoxBtn {
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -30px;
+    cursor: pointer;
+    line-height: 36px;
+}
+
+.headerSearchBox .SearchBoxBtn:hover i {
+    color: #1D9ED2;
+}
+
+/*自定义弹窗*/
+.BL-layer {
+    display: none;
+    padding: 30px 30px 0 30px;
+    background-color: #fff;
+}
+
+.BL-layer .normal-ts {
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+}
+
+.BL-layer .normal-ts i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffb669;
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+.xw-box .layui-layer-content .iconfont {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffb669;
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+.xw-box div.layui-layer-content {
+    position: relative;
+    padding: 30px 30px 10px 30px;
+    line-height: 24px;
+    word-break: break-all;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    min-width: 270px;
+}
+
+/*tips*/
+
+.tipsTs {
+    position: fixed;
+    font-size: 13px;
+    max-width: 200px;
+    opacity: 0;
+    filter: alpha( opacity = 0);
+    z-index: 9;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #c7c08d;
+    background-color: #fffac3;
+}
+
+.tipsTs .triangle-front,
+.tipsTs .triangle-back{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+}
+.tipsColor {
+    border-color: #c7c08d;
+    background-color: #fffac3;
+}
+.tipsColor .triangle-front{
+    border-top-color: #c7c08d;
+}
+
+.tipsTs .triangle-back {
+    margin-top: -1px;
+}
+
+.tipsColor .triangle-back {
+    border-top-color: #fffac3;
+}
